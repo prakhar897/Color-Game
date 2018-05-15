@@ -2,17 +2,34 @@
 <html lang='en-US'>
   <head>
     <meta charset='utf-8'>
-    <title>ToDo App</title>
+    <title>Color Game</title>
     <meta name='author' content=''>
     <meta name='description' content=''>
     <meta name='keywords' content=''>
     <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=0'>
     <link rel='icon' type='image/png' href='favicon.png'>
-    <link rel='stylesheet' href='main.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' href='mycss.css'>
+    <script defer src='main.js'></script>
   </head>
   <body>
-   <h1>Color Guessing Game</h1>
+   <h1 class= "text-center heading">Color Guessing Game</h1>
+   <div class = "navb">
+     <button class="btn btn-default newgame">New Game</button>
+     <button class="btn btn-default easy">Easy</button>
+     <button class="btn btn-default hard">Hard</button>
+   </div>
+   <div id = "container">
+     <div class="square"></div>
+     <div class="square"></div>
+     <div class="square"></div>
+     <div class="square"></div>
+     <div class="square"></div>
+     <div class="square"></div> 
+
+   </div>
+
    
-    <script defer src='main.js'></script>
+    
   </body>
 </html>

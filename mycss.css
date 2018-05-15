@@ -1,0 +1,58 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+header,section,footer,aside,nav,article,hgroup{
+	display: block;
+}
+
+body{
+	text-align: center;
+	background-color: black;
+}
+
+.heading{
+	color:white;
+	background-color: blue;
+	padding-bottom:50px;
+	padding-top: 50px;
+	margin-top: -20px;
+}
+
+.navb{
+	background-color: white;
+	margin-top: -10px;
+}
+
+.newgame{
+	padding: 0;
+	border: none;
+	background: none;
+
+}
+
+.easy{
+	padding: 0;
+	border: none;
+	background: none;
+}
+
+.hard{
+	padding: 0;
+	border: none;
+	background: none;
+}
+
+.square{
+	width:30%;
+	padding-bottom: 30%;
+	background-color: red;
+	float: left;
+	margin:1.66%;
+}
+
+#container{
+	max-width: 600px;
+	margin:0 auto;
+}
