@@ -50,6 +50,7 @@ body{
 	background-color: red;
 	float: left;
 	margin:1.66%;
+	border-radius: 20px;
 }
 
 #container{
