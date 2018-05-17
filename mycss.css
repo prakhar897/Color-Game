@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 *{
 	padding: 0px;
 	margin: 0px;
@@ -18,30 +20,43 @@ body{
 	padding-bottom:50px;
 	padding-top: 50px;
 	margin-top: -20px;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
 }
 
 .navb{
 	background-color: white;
-	margin-top: -10px;
+	margin-top: 0px;
 }
 
 .newgame{
 	padding: 0;
 	border: none;
 	background: none;
-
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	height: 100%;
+	letter-spacing: 1px;
 }
 
 .easy{
 	padding: 0;
 	border: none;
 	background: none;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	height: 100%;
+	letter-spacing: 1px;
 }
 
 .hard{
 	padding: 0;
 	border: none;
 	background: none;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	height: 100%;
+	letter-spacing: 1px;
 }
 
 .square{
@@ -53,7 +68,17 @@ body{
 	border-radius: 20px;
 }
 
+.selected{
+	background-color: blue;
+}
+
 #container{
 	max-width: 600px;
 	margin:0 auto;
+}
+
+.message{
+	font-family: 'Oswald', sans-serif;
+	display: inline-block;
+	width: 20%;
 }

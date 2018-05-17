@@ -63,7 +63,7 @@ function generategame(){
 	head.style.background = "blue";
 	colors = randomcolor(mode);
 	pickedColor = colors[pickcolor()];
-	head.innerHTML = "Color Guessing Game " + pickedColor;
+	head.innerHTML = "Color Guessing Game - " + pickedColor;
 	for(var i=0;i<mode;i++){
 		squares[i].style.background = colors[i];
 	}
@@ -71,24 +71,18 @@ function generategame(){
 
 function easyg(){
 	mode = 3;
-	colors = randomcolor(mode);
-	pickedColor = colors[pickcolor()];
-	head.innerHTML = "Color Guessing Game " + pickedColor;
-	for(var i=0;i<mode;i++){
-		squares[i].style.background = colors[i];
-	}
+	generategame();
 	for(i=3;i<6;i++)
 		squares[i].style.display = "none";
+	easy.classList.add("selected");
+	hard.classList.remove("selected");
 }
 
 function hardg(){
 	mode = 6;
-	colors = randomcolor(mode);
-	pickedColor = colors[pickcolor()];
-	head.innerHTML = "Color Guessing Game " + pickedColor;
-	for(var i=0;i<mode;i++){
-		squares[i].style.background = colors[i];
-	}
+	generategame();
 	for(i=3;i<6;i++)
 		squares[i].style.display = "inline";
+	hard.classList.add("selected");
+	easy.classList.remove("selected");
 }
