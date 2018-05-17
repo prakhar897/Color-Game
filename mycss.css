@@ -29,7 +29,7 @@ body{
 	margin-top: 0px;
 }
 
-.newgame{
+button{
 	padding: 0;
 	border: none;
 	background: none;
@@ -37,26 +37,7 @@ body{
 	font-family: 'Oswald', sans-serif;
 	height: 100%;
 	letter-spacing: 1px;
-}
-
-.easy{
-	padding: 0;
-	border: none;
-	background: none;
-	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
-	height: 100%;
-	letter-spacing: 1px;
-}
-
-.hard{
-	padding: 0;
-	border: none;
-	background: none;
-	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
-	height: 100%;
-	letter-spacing: 1px;
+	transition: all 0.2s;
 }
 
 .square{
@@ -66,6 +47,7 @@ body{
 	float: left;
 	margin:1.66%;
 	border-radius: 20px;
+	transition: background 0.5s;
 }
 
 .selected{
@@ -81,4 +63,10 @@ body{
 	font-family: 'Oswald', sans-serif;
 	display: inline-block;
 	width: 20%;
+	height: 100%;
+}
+
+button:hover{
+	color:white;
+	background-color:blue; 
 }
