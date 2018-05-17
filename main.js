@@ -14,7 +14,6 @@ generategame();
 
 for(var i=0;i<mode;i++)
 {
-	squares[i].style.background = colors[i];
 	squares[i].addEventListener("click",clicksq);
 }
 
@@ -54,7 +53,7 @@ function randomcolor(num){
 
 function pickcolor(){
 	var e = Math.floor(Math.random()*mode);
-	//console.log(e);
+	console.log(e);
 	return e;
 }
 
@@ -87,7 +86,9 @@ function hardg(){
 	colors = randomcolor(mode);
 	pickedColor = colors[pickcolor()];
 	head.innerHTML = "Color Guessing Game " + pickedColor;
-	for(var i=0;i<squares.length;i++){
+	for(var i=0;i<mode;i++){
 		squares[i].style.background = colors[i];
 	}
+	for(i=3;i<6;i++)
+		squares[i].style.display = "inline";
 }
